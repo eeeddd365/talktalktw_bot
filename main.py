@@ -14,7 +14,7 @@ def run_flask():
     app.run(host='0.0.0.0', port=port)
 
 # --- 2. 初始化 ---
-TOKEN = os.environ.get('BOT_TOKEN') or '8540965623:AAE69xBqJJo1gidq5zZ53kOiS79i302zKfg'
+TOKEN = os.environ.get('BOT_TOKEN') or '8540965623:AAGI5nUvmYu2UOTMZPgiLqNemI3a7uXlFMg'
 bot = telebot.TeleBot(TOKEN)
 users = {}
 
@@ -145,3 +145,4 @@ def start_chat(id1, id2):
 if __name__ == "__main__":
     Thread(target=run_flask).start()
     bot.infinity_polling()
+
